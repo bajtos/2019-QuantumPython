@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Lehký úvod do kvantových počítačů</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- My own customizations -->
+    <style>
+      .reveal li {
+        margin: 0.5em 0;
+      }
+
+      .reveal .attribution {
+        position: fixed;
+        bottom: 0px;
+        width: 90%;
+        font-size: 0.4em;
+        font-style: italic;
+      }
+
+      .reveal .note {
+        font-size: 0.8em;
+        font-style: italic;
+      }
+
+      ul.nodisc {
+        list-style-type: none;
+      }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+<!-- ======= SLIDES START ======= -->
+
+<section>
+  <br/>
+  <h2>Kvantové počítače</h2>
+  <h4><em>lehký úvod do problematiky</em></h4>
+  <br/>
+  <div style="text-align: right">
+    <p>Miroslav Bajtoš
+    <br/><em>Lead Node.js Engineer @ IBM</em>
+  </div>
+</section>
+
+<section>
+<br/>
+<h2>Thank you!</h2>
+<br/>
+<p>Miroslav Bajtoš
+<p><a href="https://bajtos.net">https://bajtos.net</a>
+<p><br/>
+<p class="note">(slides: <a href="https://bajtos.net/2018-QuantumIntro">bajtos.net/Q</a>)
+</section>
+
+
+<!-- ======= SLIDES END ======= -->
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        pdfMaxPagesPerSlide: 1,
+
+        progress: true,
+        history: true,
+        dependencies: [
+          // { src: 'plugin/markdown/marked.js' },
+          // { src: 'plugin/markdown/markdown.js' },
+          // { src: 'plugin/notes/notes.js', async: true },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() { hljs.initHighlightingOnLoad(); }
+          },
+          // { src: 'plugin/chart/Chart.min.js' },
+          // { src: 'plugin/chart/csv2chart.js' },
+          // { src: 'plugin/line-numbers/line-numbers.js'},
+        ],
+      });
+    </script>
+  </body>
+</html>
