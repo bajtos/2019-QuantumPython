@@ -1,4 +1,4 @@
-# An introduction to Quantum Computing
+# An introduction to Quantum Computing for Python developers
 
 ## License
 
